@@ -51,6 +51,6 @@ const styles = {
     },
 };
 
-export default connect(state=> {
-    scene:state.routes.scene
-})(App);
+export default connect((state)=>({
+    scene: state.routes.scene
+}))(App);
