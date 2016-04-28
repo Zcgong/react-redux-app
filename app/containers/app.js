@@ -12,6 +12,15 @@ import React, {
 } from 'react-native';
 
 import {connect} from 'react-redux';
+import {Actions, Scene, Reducer, Router, TabBar, Modal} from 'react-native-router-flux';
+import {Ionicons} from 'react-native-vector-icons';
+
+import MainContainer from './main-container';
+import LoginContainer from './login-container';
+import TabView from '../components/tabview';
+import Drawer from '../components/drawer';
+import CommonStyle from '../styles/common';
+import {Focus} from '../actions/route-actions';
 
 class App extends Component {
     render() {
